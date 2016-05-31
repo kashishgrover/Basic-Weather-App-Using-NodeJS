@@ -1,0 +1,52 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <center>
+            <h2>Weather App!</h2>
+            <br><br><br>
+            <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <input type="text" id="city" name="city" placeholder="Enter City" />
+                <br><br>
+                <input type="submit" value="Submit" />
+            </fieldset>
+            </form>
+            <br><br><br>
+            <div class="col-sm-16">
+            
+                <br>    
+                <b>City: </b> <%= name %>
+                <br>
+                <b>Latitude: </b> <%= lat %>
+                <br>
+                <b>Longitude: </b> <%= long %>
+                <br>    
+                <b>Current Temperature: </b> <%= temperature %>
+                <br>
+                <b>Current Sky: </b> <%= skytext %>
+                <br>
+                <b>Observation Time: </b> <%= observationtime %>
+
+            </div>
+            </center>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+</body>
+</html>

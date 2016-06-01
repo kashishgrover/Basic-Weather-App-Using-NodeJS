@@ -18,27 +18,39 @@
             <br><br><br>
             <form action="" method="post" enctype="multipart/form-data">
             <fieldset>
-                <input type="text" id="city" name="city" placeholder="Enter City" />
-                <br><br>
+                <input type="text" id="city1" name="city1" placeholder="Enter City 1" /> <br><br>
+                <input type="text" id="city2" name="city2" placeholder="Enter City 2" /> <br><br>
                 <input type="submit" value="Submit" />
             </fieldset>
             </form>
             <br><br><br>
-            <div class="col-sm-16">
-            
+            <div class="col-sm-6">            
                 <br>    
-                <b>City: </b> <%= name %>
+                <b>City 1: </b> <%= name1 %>
                 <br>
-                <b>Latitude: </b> <%= lat %>
+                <b>Latitude: </b> <%= lat1 %>
                 <br>
-                <b>Longitude: </b> <%= long %>
+                <b>Longitude: </b> <%= long1 %>
                 <br>    
-                <b>Current Temperature: </b> <%= temperature %>
+                <b>Current Temperature: </b> <%= temperature1 %>
                 <br>
-                <b>Current Sky: </b> <%= skytext %>
+                <b>Current Sky: </b> <%= skytext1 %>
                 <br>
-                <b>Observation Time: </b> <%= observationtime %>
-
+                <b>Observation Time: </b> <%= observationtime1 %>
+            </div>
+            <div class="col-sm-6">            
+                <br>    
+                <b>City 2: </b> <%= name2 %>
+                <br>
+                <b>Latitude: </b> <%= lat2 %>
+                <br>
+                <b>Longitude: </b> <%= long2 %>
+                <br>    
+                <b>Current Temperature: </b> <%= temperature2 %>
+                <br>
+                <b>Current Sky: </b> <%= skytext2 %>
+                <br>
+                <b>Observation Time: </b> <%= observationtime2 %>
             </div>
             </center>
         </div>
